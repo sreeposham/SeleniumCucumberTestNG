@@ -1,0 +1,1 @@
+Get text of element By.xpath: //div[@role='dialog']//p[text()='Total amount converted']/following-sibling::p

@@ -1,0 +1,1 @@
+Get text of element By.xpath: //div[contains(.,'Available from ') and contains(.,'allet balance:')]/following-sibling::div

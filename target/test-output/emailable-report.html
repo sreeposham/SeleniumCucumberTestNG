@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite Cucumber Corporate Feature</th></tr>
+<tr><td><a href="#t0">Test Cucumber Corporate Feature</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">38,199</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite Cucumber Corporate Feature</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test Cucumber Corporate Feature &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">anhtester.com.runners.OpsTestRunner</td><td><a href="#m0">runScenario</a></td><td rowspan="1">1690893532784</td><td rowspan="1">33010</td></tr></tbody>
+</table>
+<h2>Test Cucumber Corporate Feature</h2><h3 id="m0">anhtester.com.runners.OpsTestRunner#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Verify the end to end flow of Exchange flow for AUD corridor&quot;</td><td>&quot;End to End Exchange flow - AUD&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: Actual value:&apos;02/08/2023 &amp; Expected value:&apos;&apos; expected [true] but found [false]
+	at anhtester.com.keywords.WebUI.verifyTrue(WebUI.java:1053)
+	at anhtester.com.hubpay.corp.pages.DashboardPage.verifyFieldValue(DashboardPage.java:144)
+	at anhtester.com.hubpay.corp.pages.DashboardPage.verifyOnlyExchangeTransactionDetails(DashboardPage.java:162)
+	at anhtester.com.hubpay.corp.stepdefinitions.DashboardPageStepDefinition.I_verify_transactions_status_open_details_view(DashboardPageStepDefinition.java:162)
+	at ✽.I verify details of exchange transaction on transaction details view(file:///Users/kanthreddy/wip/Hubpay_QAAutomation/src/test/resources/features/ExchangeFlow_AUD.feature:34)
+... Removed 3 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

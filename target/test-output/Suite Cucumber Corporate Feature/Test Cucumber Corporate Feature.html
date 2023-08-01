@@ -1,0 +1,101 @@
+<html>
+<head>
+<title>TestNG:  Test Cucumber Corporate Feature</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test Cucumber Corporate Feature</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Aug 01 18:08:51 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>38 seconds (38199 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='anhtester.com.runners.OpsTestRunner.runScenario()'><b>runScenario</b><br>Test class: anhtester.com.runners.OpsTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the end to end flow of Exchange flow for AUD corridor", "End to End Exchange flow - AUD"</td>
+<td><div><pre>java.lang.AssertionError: Actual value:&apos;02/08/2023 &amp; Expected value:&apos;&apos; expected [true] but found [false]
+	at anhtester.com.keywords.WebUI.verifyTrue(WebUI.java:1053)
+	at anhtester.com.hubpay.corp.pages.DashboardPage.verifyFieldValue(DashboardPage.java:144)
+	at anhtester.com.hubpay.corp.pages.DashboardPage.verifyOnlyExchangeTransactionDetails(DashboardPage.java:162)
+	at anhtester.com.hubpay.corp.stepdefinitions.DashboardPageStepDefinition.I_verify_transactions_status_open_details_view(DashboardPageStepDefinition.java:162)
+	at ✽.I verify details of exchange transaction on transaction details view(file:///Users/kanthreddy/wip/Hubpay_QAAutomation/src/test/resources/features/ExchangeFlow_AUD.feature:34)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace226225648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace226225648'><pre>java.lang.AssertionError: Actual value:&apos;02/08/2023 &amp; Expected value:&apos;&apos; expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at anhtester.com.keywords.WebUI.verifyTrue(WebUI.java:1053)
+	at anhtester.com.hubpay.corp.pages.DashboardPage.verifyFieldValue(DashboardPage.java:144)
+	at anhtester.com.hubpay.corp.pages.DashboardPage.verifyOnlyExchangeTransactionDetails(DashboardPage.java:162)
+	at anhtester.com.hubpay.corp.stepdefinitions.DashboardPageStepDefinition.I_verify_transactions_status_open_details_view(DashboardPageStepDefinition.java:162)
+	at ✽.I verify details of exchange transaction on transaction details view(file:///Users/kanthreddy/wip/Hubpay_QAAutomation/src/test/resources/features/ExchangeFlow_AUD.feature:34)
+</pre></div></td>
+<td>33</td>
+<td>anhtester.com.runners.OpsTestRunner@4e8b357d</td></tr>
+</table><p>
+</body>
+</html>

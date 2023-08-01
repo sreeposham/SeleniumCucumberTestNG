@@ -1,0 +1,15 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 39.51 s <<< FAILURE! -- in TestSuite
+anhtester.com.runners.OpsTestRunner.runScenario["Verify the end to end flow of Exchange flow for AUD corridor", "End to End Exchange flow - AUD"](1) -- Time elapsed: 33.02 s <<< FAILURE!
+java.lang.AssertionError: Actual value:'02/08/2023 & Expected value:'' expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at anhtester.com.keywords.WebUI.verifyTrue(WebUI.java:1053)
+	at anhtester.com.hubpay.corp.pages.DashboardPage.verifyFieldValue(DashboardPage.java:144)
+	at anhtester.com.hubpay.corp.pages.DashboardPage.verifyOnlyExchangeTransactionDetails(DashboardPage.java:162)
+	at anhtester.com.hubpay.corp.stepdefinitions.DashboardPageStepDefinition.I_verify_transactions_status_open_details_view(DashboardPageStepDefinition.java:162)
+	at ✽.I verify details of exchange transaction on transaction details view(file:///Users/kanthreddy/wip/Hubpay_QAAutomation/src/test/resources/features/ExchangeFlow_AUD.feature:34)
+

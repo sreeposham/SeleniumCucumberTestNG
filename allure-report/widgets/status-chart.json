@@ -1,0 +1,1 @@
+[{"uid":"4917e6a5ad9a8a4d","name":"Verify the end to end flow of Exchange flow for AUD corridor","time":{"start":1690893532885,"stop":1690893565724,"duration":32839},"status":"failed","severity":"normal"},{"uid":"f76f1eb3fa32b4dc","name":"Runs Cucumber Scenarios","time":{"start":1690893532801,"stop":1690893565797,"duration":32996},"status":"failed","severity":"normal"}]

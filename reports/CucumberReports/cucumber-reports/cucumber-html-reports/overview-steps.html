@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>AutomationFrameworkCucumberTestNG</td>
+        <td>1</td>
+      <td>01 Aug 2023, 18:09</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">anhtester.com.common.CommonSteps.I_create_testdata_file_for(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="16133000">0.016</td>
+              <td class="duration" data-value="16133000">0.016</td>
+              <td class="duration" data-value="16133000">0.016</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.common.CommonSteps.I_enter_credentials_on_CorpSuite_Login_Page()</td>
+              <td>1</td>
+              <td class="duration" data-value="4099109000">4.099</td>
+              <td class="duration" data-value="4099109000">4.099</td>
+              <td class="duration" data-value="4099109000">4.099</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.common.CommonSteps.I_signout_corp_portal()</td>
+              <td>1</td>
+              <td class="duration" data-value="106000">0.000</td>
+              <td class="duration" data-value="106000">0.000</td>
+              <td class="duration" data-value="106000">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hooks.Hooks.afterScenario(io.cucumber.java.Scenario)</td>
+              <td>1</td>
+              <td class="duration" data-value="1217142000">1.217</td>
+              <td class="duration" data-value="1217142000">1.217</td>
+              <td class="duration" data-value="1217142000">1.217</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hooks.Hooks.beforeScenario()</td>
+              <td>1</td>
+              <td class="duration" data-value="8396970000">8.396</td>
+              <td class="duration" data-value="8396970000">8.396</td>
+              <td class="duration" data-value="8396970000">8.396</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.DashboardPageStepDefinition.I_close_the_exchange_transaction_details_view()</td>
+              <td>1</td>
+              <td class="duration" data-value="202000">0.000</td>
+              <td class="duration" data-value="202000">0.000</td>
+              <td class="duration" data-value="202000">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.DashboardPageStepDefinition.I_navigate_to_exchange_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="1232091000">1.232</td>
+              <td class="duration" data-value="1232091000">1.232</td>
+              <td class="duration" data-value="1232091000">1.232</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.DashboardPageStepDefinition.I_navigate_to_transactions_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="95477000">0.095</td>
+              <td class="duration" data-value="95477000">0.095</td>
+              <td class="duration" data-value="95477000">0.095</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.DashboardPageStepDefinition.I_navigate_to_wallets_tab_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="325000">0.000</td>
+              <td class="duration" data-value="325000">0.000</td>
+              <td class="duration" data-value="325000">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.DashboardPageStepDefinition.I_note_wallet_balance_for_corridor(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1402851000">1.402</td>
+              <td class="duration" data-value="1402851000">1.402</td>
+              <td class="duration" data-value="1402851000">1.402</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.DashboardPageStepDefinition.I_verify_available_funds_for_corridor(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="120500">0.000</td>
+              <td class="duration" data-value="120500">0.000</td>
+              <td class="duration" data-value="241000">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.DashboardPageStepDefinition.I_verify_dashboard_page_is_displayed()</td>
+              <td>2</td>
+              <td class="duration" data-value="1442847500">1.442</td>
+              <td class="duration" data-value="1442847500">2.828</td>
+              <td class="duration" data-value="2885695000">2.885</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.DashboardPageStepDefinition.I_verify_transactions_status_on_details_view(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="182760000">0.182</td>
+              <td class="duration" data-value="182760000">0.182</td>
+              <td class="duration" data-value="182760000">0.182</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.DashboardPageStepDefinition.I_verify_transactions_status_open_details_view()</td>
+              <td>1</td>
+              <td class="duration" data-value="277279000">0.277</td>
+              <td class="duration" data-value="277279000">0.277</td>
+              <td class="duration" data-value="277279000">0.277</td>
+              <td class="failed">0.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.DashboardPageStepDefinition.I_verify_transactions_status_open_details_view(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1845266000">1.845</td>
+              <td class="duration" data-value="1845266000">1.845</td>
+              <td class="duration" data-value="1845266000">1.845</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.ExchangePageStepDefinition.I_click_button_exchange_success_modal(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1073954000">1.073</td>
+              <td class="duration" data-value="1073954000">1.073</td>
+              <td class="duration" data-value="1073954000">1.073</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.ExchangePageStepDefinition.I_click_button_on_exchange_page(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1810831000">1.810</td>
+              <td class="duration" data-value="1810831000">1.810</td>
+              <td class="duration" data-value="1810831000">1.810</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.ExchangePageStepDefinition.I_confirm_the_exchange_transaction()</td>
+              <td>1</td>
+              <td class="duration" data-value="57844000">0.057</td>
+              <td class="duration" data-value="57844000">0.057</td>
+              <td class="duration" data-value="57844000">0.057</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.ExchangePageStepDefinition.I_consent_checkbox_exchange_page(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="56487000">0.056</td>
+              <td class="duration" data-value="56487000">0.056</td>
+              <td class="duration" data-value="56487000">0.056</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.ExchangePageStepDefinition.I_review_exchangesummary_for_corridor_and_amount(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2901971000">2.901</td>
+              <td class="duration" data-value="2901971000">2.901</td>
+              <td class="duration" data-value="2901971000">2.901</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.ExchangePageStepDefinition.I_select_corridor_and_input_amount_on_exchange_page(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="201802000">0.201</td>
+              <td class="duration" data-value="201802000">0.201</td>
+              <td class="duration" data-value="201802000">0.201</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.ExchangePageStepDefinition.I_verify_default_details_on_exchange_page()</td>
+              <td>1</td>
+              <td class="duration" data-value="157003000">0.157</td>
+              <td class="duration" data-value="157003000">0.157</td>
+              <td class="duration" data-value="157003000">0.157</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.ExchangePageStepDefinition.I_verify_details_exchange_success_modal()</td>
+              <td>1</td>
+              <td class="duration" data-value="2152661000">2.152</td>
+              <td class="duration" data-value="2152661000">2.152</td>
+              <td class="duration" data-value="2152661000">2.152</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.ExchangePageStepDefinition.I_verify_live_rate_is_displayed_exchange_page(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="787352000">0.787</td>
+              <td class="duration" data-value="787352000">0.787</td>
+              <td class="duration" data-value="787352000">0.787</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.ExchangePageStepDefinition.I_verify_processingtime_for_the_corridor(java.lang.String,java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="907110000">0.907</td>
+              <td class="duration" data-value="907110000">0.907</td>
+              <td class="duration" data-value="907110000">0.907</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">anhtester.com.hubpay.corp.stepdefinitions.ExchangePageStepDefinition.I_verify_step_status_on_exchange_page(java.lang.String,java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="91155000">0.091</td>
+              <td class="duration" data-value="91155000">0.094</td>
+              <td class="duration" data-value="182310000">0.182</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>26</td>
+            <td>29</td>
+            <td class="duration">1.101</td>
+            <td class="duration">8.396</td>
+            <td class="duration">31.940</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

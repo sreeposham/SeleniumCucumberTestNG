@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-01T18:08:51 IST" name="Suite Cucumber Corporate Feature" finished-at="2023-08-01T18:09:29 IST" duration-ms="38199">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:anhtester.com.runners.OpsTestRunner@4e8b357d]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-08-01T18:08:51 IST" name="Test Cucumber Corporate Feature" finished-at="2023-08-01T18:09:29 IST" duration-ms="38199">
+      <class name="anhtester.com.runners.OpsTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:anhtester.com.runners.OpsTestRunner@4e8b357d]" started-at="2023-08-01T18:08:51 IST" name="setUpClass" finished-at="2023-08-01T18:08:52 IST" duration-ms="1105" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@67d9abfb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:anhtester.com.runners.OpsTestRunner@4e8b357d]" started-at="2023-08-01T18:08:52 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-01T18:09:25 IST" duration-ms="33010" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the end to end flow of Exchange flow for AUD corridor"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["End to End Exchange flow - AUD"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Actual value:'02/08/2023 & Expected value:'' expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Actual value:'02/08/2023 & Expected value:'' expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at anhtester.com.keywords.WebUI.verifyTrue(WebUI.java:1053)
+at anhtester.com.hubpay.corp.pages.DashboardPage.verifyFieldValue(DashboardPage.java:144)
+at anhtester.com.hubpay.corp.pages.DashboardPage.verifyOnlyExchangeTransactionDetails(DashboardPage.java:162)
+at anhtester.com.hubpay.corp.stepdefinitions.DashboardPageStepDefinition.I_verify_transactions_status_open_details_view(DashboardPageStepDefinition.java:162)
+at ✽.I verify details of exchange transaction on transaction details view(file:///Users/kanthreddy/wip/Hubpay_QAAutomation/src/test/resources/features/ExchangeFlow_AUD.feature:34)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:anhtester.com.runners.OpsTestRunner@4e8b357d]" started-at="2023-08-01T18:09:25 IST" name="tearDownClass" finished-at="2023-08-01T18:09:29 IST" duration-ms="4046" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:anhtester.com.runners.OpsTestRunner@4e8b357d]" started-at="2023-08-01T18:09:29 IST" name="afterSuite" finished-at="2023-08-01T18:09:29 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- anhtester.com.runners.OpsTestRunner -->
+    </test> <!-- Test Cucumber Corporate Feature -->
+  </suite> <!-- Suite Cucumber Corporate Feature -->
+</testng-results>
